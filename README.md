@@ -102,6 +102,10 @@ AssignmentProperty[Yield, Await]:
     CallExpression[?Yield, ?Await] `[` Expression `]` Initializer[+In, ?Yield, ?Await]?
 ```
 
+# Resources
+
+- [Overview Slides](https://rbuckton.github.io/proposal-shorthand-improvements/ShorthandImprovements-tc39.pptx)
+
 # TODO
 
 The following is a high-level list of tasks to progress through each stage of the [TC39 proposal process](https://tc39.github.io/process-document/):
