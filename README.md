@@ -41,13 +41,13 @@ is used as the property name for the assignment property, while the property acc
 used as the assignment target. This is illustrated by the following syntactic conversion:
 
 ```js
-const { a.x } = o;
+({ a.x } = o);
 ```
 
 is identical in its behavior to:
 
 ```js
-const { x: a.x } = o;
+({ x: a.x } = o);
 ```
 
 In addition to the dot notation, bracket notation can be used here as well. When the bracket 
@@ -56,12 +56,12 @@ of the assignment property, while the property accessor itself is used as the as
 This is illustrated by the following syntactic conversion:
 
 ```js
-const { a["x"] } = o;
+({ a["x"] } = o);
 ```
 
 is identical in its behavior to:
 ```js
-const { ["x"]: a["x"] } = o;
+({ ["x"]: a["x"] } = o);
 ```
 
 # Grammar
